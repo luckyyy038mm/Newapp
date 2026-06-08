@@ -1,0 +1,12 @@
+
+> crypto-trading-platform@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.7 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.2.1.146:3000
+✓ Ready in 313ms
+
+ GET / 307 in 2.0s (next.js: 1907ms, application-code: 136ms)
+ GET /dashboard 200 in 563ms (next.js: 466ms, application-code: 98ms)
+[?25h
