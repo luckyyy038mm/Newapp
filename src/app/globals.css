@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Scrollbar thin variant */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Custom selection colors */
+::selection {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Custom animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Trading terminal specific styles */
+.price-up {
+  color: #10b981;
+}
+
+.price-down {
+  color: #ef4444;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
