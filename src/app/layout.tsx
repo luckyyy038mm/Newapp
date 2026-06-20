@@ -1,9 +1,12 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "CryptoTerminal - Professional Trading Platform",
-  description: "A professional crypto trading analysis platform with real-time market data, paper trading, signals, and advanced charting.",
+  title: 'TradingTerminal Pro - Professional Crypto Charts',
+  description: 'Professional trading chart platform with real-time Binance Futures data, advanced charting tools, and premium terminal interface.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -14,9 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" 
+          rel="stylesheet" 
+        />
       </head>
-      <body className="antialiased bg-slate-950 text-slate-100 min-h-screen">
+      <body className="antialiased">
         {children}
       </body>
     </html>

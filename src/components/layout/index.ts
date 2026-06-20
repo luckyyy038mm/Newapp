@@ -1,3 +1,1 @@
-// Layout components barrel export
-export { Sidebar, MobileSidebar } from './sidebar';
-export { Header } from './header';
+export { default as TopBar } from './TopBar';

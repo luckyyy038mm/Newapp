@@ -31,14 +31,16 @@ export function MarketOverview({ selectedSymbol = 'BTCUSDT', onSelectSymbol }: M
           if (DEFAULT_SYMBOLS.includes(item.symbol)) {
             tickerMap.set(item.symbol, {
               symbol: item.symbol,
-              price: parseFloat(item.lastPrice),
+              lastPrice: parseFloat(item.lastPrice),
               priceChange: parseFloat(item.priceChange),
               priceChangePercent: parseFloat(item.priceChangePercent),
               high24h: parseFloat(item.highPrice),
               low24h: parseFloat(item.lowPrice),
               volume24h: parseFloat(item.volume),
               quoteVolume24h: parseFloat(item.quoteVolume),
-              lastUpdate: Date.now(),
+              bidPrice: parseFloat(item.bidPrice) || 0,
+              askPrice: parseFloat(item.askPrice) || 0,
+              timestamp: Date.now(),
             });
           }
         }

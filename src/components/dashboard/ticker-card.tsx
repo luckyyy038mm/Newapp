@@ -42,7 +42,7 @@ export function TickerCard({ ticker, onClick, isSelected }: TickerCardProps) {
 
       <div className="space-y-1">
         <div className="text-xl font-bold text-slate-100">
-          ${formatPrice(ticker.price)}
+          ${formatPrice(ticker.lastPrice)}
         </div>
         <div className="flex justify-between text-xs">
           <span className="text-slate-400">
@@ -90,7 +90,7 @@ export function TickerRow({ ticker, onClick, isSelected }: TickerRowProps) {
         </div>
       </div>
       <div className="text-right">
-        <div className="font-medium text-slate-100">${formatPrice(ticker.price)}</div>
+        <div className="font-medium text-slate-100">${formatPrice(ticker.lastPrice)}</div>
         <div className={cn('text-sm', isPositive ? 'text-emerald-400' : 'text-red-400')}>
           {formatPercent(ticker.priceChangePercent)}
         </div>
